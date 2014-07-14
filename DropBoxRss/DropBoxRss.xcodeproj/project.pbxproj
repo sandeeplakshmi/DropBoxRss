@@ -22,6 +22,12 @@
 		148A976F197418EE00F85C3C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 148A974E197418EE00F85C3C /* UIKit.framework */; };
 		148A9777197418EE00F85C3C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 148A9775197418EE00F85C3C /* InfoPlist.strings */; };
 		148A9779197418EE00F85C3C /* DropBoxRssTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 148A9778197418EE00F85C3C /* DropBoxRssTests.m */; };
+		148A9785197429E900F85C3C /* DBRRssItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 148A9784197429E900F85C3C /* DBRRssItems.m */; };
+		148A9786197429E900F85C3C /* DBRRssItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 148A9784197429E900F85C3C /* DBRRssItems.m */; };
+		148A978919742E0800F85C3C /* NSDictionary+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 148A978819742E0800F85C3C /* NSDictionary+Utility.m */; };
+		148A978A19742E0800F85C3C /* NSDictionary+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 148A978819742E0800F85C3C /* NSDictionary+Utility.m */; };
+		148A978F1974392400F85C3C /* DBRRSSItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 148A978E1974392400F85C3C /* DBRRSSItemTableViewCell.m */; };
+		148A97901974392400F85C3C /* DBRRSSItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 148A978E1974392400F85C3C /* DBRRSSItemTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +61,13 @@
 		148A9774197418EE00F85C3C /* DropBoxRssTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DropBoxRssTests-Info.plist"; sourceTree = "<group>"; };
 		148A9776197418EE00F85C3C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		148A9778197418EE00F85C3C /* DropBoxRssTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropBoxRssTests.m; sourceTree = "<group>"; };
+		148A9783197429E900F85C3C /* DBRRssItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBRRssItems.h; sourceTree = "<group>"; };
+		148A9784197429E900F85C3C /* DBRRssItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBRRssItems.m; sourceTree = "<group>"; };
+		148A978719742E0800F85C3C /* NSDictionary+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Utility.h"; sourceTree = "<group>"; };
+		148A978819742E0800F85C3C /* NSDictionary+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Utility.m"; sourceTree = "<group>"; };
+		148A978D1974392400F85C3C /* DBRRSSItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBRRSSItemTableViewCell.h; sourceTree = "<group>"; };
+		148A978E1974392400F85C3C /* DBRRSSItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBRRSSItemTableViewCell.m; sourceTree = "<group>"; };
+		148A97961974702F00F85C3C /* DBRConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBRConstants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,14 +127,17 @@
 		148A9750197418EE00F85C3C /* DropBoxRss */ = {
 			isa = PBXGroup;
 			children = (
+				148A979119743A6900F85C3C /* Story Boards */,
+				148A978C197438E100F85C3C /* TableCell */,
+				148A978B197433C100F85C3C /* Utilities */,
+				148A9782197429BF00F85C3C /* Models */,
 				148A9759197418EE00F85C3C /* DBRAppDelegate.h */,
 				148A975A197418EE00F85C3C /* DBRAppDelegate.m */,
-				148A975C197418EE00F85C3C /* Main_iPhone.storyboard */,
-				148A975F197418EE00F85C3C /* Main_iPad.storyboard */,
 				148A9762197418EE00F85C3C /* DBRViewController.h */,
 				148A9763197418EE00F85C3C /* DBRViewController.m */,
 				148A9765197418EE00F85C3C /* Images.xcassets */,
 				148A9751197418EE00F85C3C /* Supporting Files */,
+				148A97961974702F00F85C3C /* DBRConstants.h */,
 			);
 			path = DropBoxRss;
 			sourceTree = "<group>";
@@ -153,6 +169,42 @@
 				148A9775197418EE00F85C3C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		148A9782197429BF00F85C3C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				148A9783197429E900F85C3C /* DBRRssItems.h */,
+				148A9784197429E900F85C3C /* DBRRssItems.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		148A978B197433C100F85C3C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				148A978719742E0800F85C3C /* NSDictionary+Utility.h */,
+				148A978819742E0800F85C3C /* NSDictionary+Utility.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		148A978C197438E100F85C3C /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				148A978D1974392400F85C3C /* DBRRSSItemTableViewCell.h */,
+				148A978E1974392400F85C3C /* DBRRSSItemTableViewCell.m */,
+			);
+			name = TableCell;
+			sourceTree = "<group>";
+		};
+		148A979119743A6900F85C3C /* Story Boards */ = {
+			isa = PBXGroup;
+			children = (
+				148A975C197418EE00F85C3C /* Main_iPhone.storyboard */,
+				148A975F197418EE00F85C3C /* Main_iPad.storyboard */,
+			);
+			name = "Story Boards";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +308,10 @@
 			files = (
 				148A9757197418EE00F85C3C /* main.m in Sources */,
 				148A975B197418EE00F85C3C /* DBRAppDelegate.m in Sources */,
+				148A978F1974392400F85C3C /* DBRRSSItemTableViewCell.m in Sources */,
+				148A9785197429E900F85C3C /* DBRRssItems.m in Sources */,
 				148A9764197418EE00F85C3C /* DBRViewController.m in Sources */,
+				148A978919742E0800F85C3C /* NSDictionary+Utility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +319,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				148A9786197429E900F85C3C /* DBRRssItems.m in Sources */,
+				148A978A19742E0800F85C3C /* NSDictionary+Utility.m in Sources */,
+				148A97901974392400F85C3C /* DBRRSSItemTableViewCell.m in Sources */,
 				148A9779197418EE00F85C3C /* DropBoxRssTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,7 +379,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -360,7 +418,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -391,10 +449,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DropBoxRss/DropBoxRss-Prefix.pch";
 				INFOPLIST_FILE = "DropBoxRss/DropBoxRss-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -404,10 +465,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DropBoxRss/DropBoxRss-Prefix.pch";
 				INFOPLIST_FILE = "DropBoxRss/DropBoxRss-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

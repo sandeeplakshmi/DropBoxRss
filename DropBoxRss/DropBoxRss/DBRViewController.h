@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DBRViewController : UIViewController
+@interface DBRViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@property (retain, nonatomic) IBOutlet UITableView *rssTableView;
 
 @end
